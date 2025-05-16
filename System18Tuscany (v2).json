@@ -1,0 +1,1094 @@
+{
+  "info": {
+    "title": "System18-Tv2",
+    "subtitle": "Oops all Tuscany",
+    "designer": "Forrest Boyd + Matthew Dekoning",
+    "orientation": "horizontal",
+    "titleX": -10,
+    "titleY": -140,
+    "titleSize": 50,
+    "subtitleSize": 18,
+    "designerSize": 12,
+    "mustSellInBlocks": false,
+    "currency": "$#"
+  },
+    "links": {
+    "bgg": "https://boardgamegeek.com/thread/3238633/system18-18xx-microgame-format/page/1",
+    "rules": "https://www.dropbox.com/scl/fi/or38t89eczc5eki8e21y7/System18_Rules.pdf?rlkey=n9kblkl7kvnz96oobs6hsatk2&e=1&dl=0"
+  },
+  "tokens": [
+    "Round"
+  ],
+  "ipo": true,
+  "bank": "∞",
+  "players": [
+    {
+        "number": 2,
+        "capital": 510,
+        "certLimit": "∞"
+    },
+    {
+      "number": 3,
+      "capital": 410,
+      "certLimit": "∞"
+    }
+  ],
+  "pools": [
+
+  ],
+  "rounds": [
+    {
+        "name": "OR3",
+        "color": "brown"
+      },
+      {
+        "name": "OR2",
+        "color": "green"
+      },
+    {
+      "name": "OR1",
+      "color": "yellow"
+    },
+    {
+      "name": "SR",
+      "color": "white"
+    }
+  ],
+  "turns": [
+    {
+      "name": "Stock Round",
+      "steps": [
+        "Sell any number of certificates",
+        "Buy one certificate"
+      ],
+      "ordered": true
+    },
+    {
+      "name": "Operating Round",
+      "steps": [
+        "Lay or upgrade track",
+        "Purchase a station",
+        "Run trains",
+        "Cross Buy a Token",
+        "Pay dividends",
+        "Purchase trains",
+        "Corporate Share Actions"
+      ],
+      "ordered": true
+    }
+  ],
+  "stock": {
+    "type": "2D",
+    "par": {
+      "values": [
+        180,
+        125,
+        90,
+        70,
+        55
+      ]
+    },
+    "movement": {
+      "up": [
+        "Sold out"
+      ],
+      "down": [
+        "Every share sold, Shares in market end of SR"
+      ],
+      "left": [
+        "Withheld revenue"
+      ],
+      "right": [
+        "Paid dividends"
+      ]
+    },
+    "market": [
+      [
+        {
+          "label": "75",
+          "arrow": "down"
+        },
+        80,
+        90,
+        100,
+        110,
+        125,
+        140,
+        160,
+        {
+          "label": "180",
+          "par": true
+        },
+        200,
+        220,
+        250,
+		{
+			"label": "275",
+			"color": "water"
+		}
+      ],
+      [
+        {
+          "label": "70",
+          "arrow": "down"
+        },
+        75,
+		80,
+        90,
+        100,
+        110,
+        {
+          "label": "125",
+          "par": true
+        },
+        140,
+        160,
+        180,
+        200,
+        220,
+        {
+          "label": "250",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "65",
+          "arrow": "down"
+        },
+        70,
+        75,
+        80,
+        {
+          "label": "90",
+          "par": true
+        },
+        100,
+        110,
+        125,
+        140,
+        160,
+        180,
+        200,
+        {
+          "label": "220",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "60",
+          "arrow": "down"
+        },
+        65,
+        {
+          "label": "70",
+          "par": true
+        },
+		75,
+        80,
+        90,
+        100,
+		110,
+        125,
+        {
+          "label": "140",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "55",
+          "arrow": "down",
+		  "par": true
+        },
+        {
+          "label": "60"
+        },
+        65,
+        70,
+        75,
+        80,
+        90,
+        {
+          "label": "100",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "50",
+          "arrow": "down"
+        },
+		{
+          "label": "60"
+        },
+		65,
+        65,
+        70,
+        75,
+        {
+          "label": "80",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "45",
+          "arrow": "down"
+        },
+        {
+          "label": "55"
+        },
+		{
+          "label": "60"
+        },
+        65,
+        {
+          "label": "65",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "40",
+          "arrow": "down"
+        },
+        {
+          "label": "50"
+        },
+        {
+          "label": "60"
+        },
+        {
+          "label": "65"
+        },
+        {
+          "label": "65",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "30",
+          "arrow": "down"
+        },
+        {
+          "label": "40"
+        },
+        {
+          "label": "50"
+        },
+        {
+          "label": "60",
+          "arrow": "up"
+        }
+      ],
+      [
+        {
+          "label": "20"
+        },
+        {
+          "label": "30"
+        },
+        {
+          "label": "40"
+        },
+        {
+          "label": "50",
+          "arrow": "up"
+        }
+      ]
+    ]
+  },
+  "trains": [
+    {
+      "name": "2",
+      "quantity": 5,
+      "price": 80,
+      "rust": "4",
+      "color": "yellow"
+    },
+    {
+      "name": "3",
+      "quantity": 2,
+      "price": 180,
+      "rust": "5",
+      "color": "green"
+    },
+    {
+      "name": "4",
+      "quantity": 2,
+      "price": 300,
+      "rust": "6",
+      "color": "green"
+    },
+    {
+      "name": "5",
+      "quantity": 1,
+      "price": 500,
+      "rust": "8",
+      "color": "brown"
+    },
+    {
+      "name": "6",
+      "quantity": 1,
+      "price": 630,
+      "color": "brown"
+    },
+	{
+	  "name": "7",
+      "quantity": 1,
+      "price": 700,
+      "color": "brown"
+	},
+    {
+      "name": "8",
+      "quantity": "∞",
+      "print": 5,
+      "price": 800,
+      "color": "grey"
+    },
+    {
+        "name": "D",
+        "quantity": "∞",
+        "print": 5,
+        "price": 800,
+        "color": "grey"
+      }
+  ],
+  "tokenTypes": {
+    "default": [
+      "Free",
+      40
+    ],
+    "three": [
+      "Free",
+      40,
+      100
+    ],
+	"five": [
+      "TBD",
+      "TBD",
+	  "TBD",
+	  "TBD",
+	  "TBD"
+    ]
+  },
+  "shareTypes": {
+    "default": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "shares": 2
+      },
+      {
+        "quantity": 8,
+        "shares": 1
+      }
+    ]
+  },
+  "floatPercent": 20,
+  "companies": [
+    {
+      "name": "Dragon",
+      "abbrev": "D",
+      "logo": "System18/DGN",
+      "color": "green",
+      "tokens": "five",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Griffin",
+      "abbrev": "G",
+      "logo": "System18/GFN",
+      "color": "gray",
+      "tokens": "five",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Kraken",
+      "abbrev": "K",
+      "logo": "System18/KKN",
+      "color": "blue",
+      "tokens": "five",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Phoenix",
+      "abbrev": "P",
+      "logo": "System18/PHX",
+      "color": "orange",
+      "tokens": "five",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    },
+	{
+      "name": "Sphinx",
+      "abbrev": "S",
+      "logo": "System18/SPX",
+      "color": "yellow",
+      "tokens": "five",
+      "shares": "default",
+      "token": {
+        "bar": "true"
+      },
+      "tokenType": "one",
+      "shareType": "default"
+    }    
+  ],
+  "phases": [
+    {
+      "name": "2",
+      "limit": 4,
+      "rounds": 1,
+      "tiles": "yellow"
+    },
+    {
+      "name": "3",
+      "limit": 4,
+      "rounds": 2,
+      "tiles": "green",
+      "on": "3"
+    },
+    {
+      "name": "4",
+      "limit": 3,
+      "rounds": 2,
+      "on": "4",
+      "tiles": "green"
+    },
+    {
+      "name": "5",
+      "limit": 2,
+      "rounds": 3,
+      "tiles": "brown",
+      "on": "5"
+    },
+    {
+      "name": "6",
+      "limit": 2,
+      "rounds": 3,
+      "tiles": "brown",
+      "on": "6"
+    },
+	{
+      "name": "7",
+      "limit": 2,
+      "rounds": 3,
+      "tiles": "brown",
+      "on": "7"
+    },     
+	{
+      "name": "8",
+      "limit": 2,
+      "rounds": 3,
+      "tiles": "brown",
+      "on": "8"
+    }
+  ],
+  "privates": [
+  ],
+  "tiles": {
+    "207": 1,
+    "208": 1,
+    "622": 1,
+    "623": 1,
+    "613": 1,
+    "614": 1,
+    "615": 1,
+    "610": 1,
+    "616": 1,
+    "617": 1,
+    "618": 1
+
+
+  },
+  "map": {
+    "roundTracker": {
+      "type": "round",
+      "x": 760,
+      "y": 520
+    },
+    "market": {
+      "x": 0,
+      "y": 1500
+    },
+    "players": {
+      "x": 680,
+      "y": 620
+    },
+    "hexes": [
+      {
+        "color": "plain",
+        "hexes": [
+
+            "B5",
+            "B7",
+            "C6",
+            "D7",
+            "E2",
+            "E6",
+            "F3"
+        ]
+      },
+      {
+          "color": "white",
+          "track": [
+            {
+              "side": 1,
+              "type": "offboard"
+            },
+            {
+                "side": 6,
+                "type": "offboard"
+              }
+        ],
+        "removeBorders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+        "hexes": [
+            "A2"
+        ]
+      },
+      {
+        "color": "white",
+        "track": [
+          {
+            "side": 1,
+            "type": "offboard"
+          }
+      ],
+      "removeBorders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+      "hexes": [
+          "E0"
+      ]
+    },
+    {
+        "color": "white",
+        "track": [
+          {
+            "side": 1,
+            "type": "offboard"
+          }
+      ],
+      "removeBorders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+      "hexes": [
+          "C0"
+      ]
+    },
+      {
+        "color": "white",
+        "track": [
+          {
+            "side": 1,
+            "type": "offboard"
+          },
+          {
+            "side": 6,
+            "type": "offboard"
+          }
+      ],
+      "removeBorders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+      "hexes": [
+          "B1"
+      ]
+    },
+    {
+        "color": "white",
+        "track": [
+            {
+                "side": 1,
+                "type": "offboard"
+              },
+              {
+                "side": 2,
+                "type": "offboard"
+              },
+            {
+            "side": 6,
+            "type": "offboard"
+          }
+      ],
+      "removeBorders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+      "hexes": [
+          "D1"
+      ]
+    },
+      {
+        "color": "water",
+        "values": [
+            {
+              "value": 20,
+              "angle": 220,
+              "percent": 0.7
+            }
+          ],
+          "icons": [
+            {
+              "type": "port",
+              "angle": 40,
+              "percent": 0.5
+            }
+          ],
+          "track": [
+            {
+              "side": 4,
+              "type": "straight",
+              "end": 0.5
+            },
+            {
+                "side": 5.5,
+                "type": "straight",
+                "start": 0.3,
+                "end": 0.7
+              }
+          ],
+        "hexes": [
+            "A8"
+        ]
+    },
+    {
+    "color": "offboard",
+    "track": [
+        {
+            "side": 4,
+            "type": "offboard"
+        }
+    ],
+    "hexes": [
+        "B9",
+        "D9",
+        "E8"
+    ]
+},
+{
+    "color": "yellow",
+    "cities": [
+        {
+          "size": 1,
+          "pass": true
+        }
+      ],
+      "terrain": [
+        {
+          "size": "medium",
+          "angle": 210,
+          "percent": 0.8,
+          "cost": 100
+        }
+      ],
+      "hexes": [
+          "D3",
+          "E4"
+      ]
+},
+{
+    "color": "plain",
+    "terrain": [
+        {
+          "size": "medium",
+          "cost": 50
+        }
+      ],
+    "cities": [
+        {
+          "size": 1,
+          "name": {
+            "name": "Livorno"
+          }
+        }
+      ],
+    "hexes": [
+        "A6"
+    ]
+},
+{
+    "color": "plain",
+    "terrain": [
+        {
+          "size": "medium",
+          "cost": 50
+        }
+      ],
+    "cities": [
+        {
+          "size": 1,
+          "name": {
+            "name": "Barga"
+          }
+        }
+      ],
+    "hexes": [
+        "C2"
+    ]
+},
+{
+    "color": "plain",
+    "cities": [
+        {
+          "size": 1,
+          "name": {
+            "name": "Bologna"
+          }
+        }
+      ],
+    "hexes": [
+        "E2"
+    ]
+},
+{
+    "color": "plain",
+    "cities": [
+        {
+          "size": 1,
+          "name": {
+            "name": "Volterra"
+          }
+        }
+      ],
+    "hexes": [
+        "B7"
+    ]
+},
+{
+    "color": "yellow",
+    "cities": [
+        {
+          "size": 1,
+          "name": {
+            "name": "Pisa"
+        }
+    }
+      ],
+      "tokens": [
+        {
+          "logo": "System18/PHX",
+          "color": "orange"
+        }
+      ],
+      "values": [
+        {
+          "value": 20
+        }
+      ],
+      "track": [
+        {
+            "side": 1,
+            "type": "straight",
+            "end": 0.5
+        },
+        {
+            "side": 5,
+            "type": "straight",
+            "end": 0.5
+        },
+        {
+            "side": 6,
+            "type": "straight",
+            "end": 0.5
+        }
+    ],
+    "hexes": [
+        "A4"
+    ]
+},
+{
+    "color": "yellow",
+    "cities": [
+        {
+          "size": 1,
+          "name": {
+            "name": "Lucca"
+          }
+        }
+      ],
+      "tokens": [
+        {
+          "logo": "System18/GFN",
+          "color": "grey"
+        }
+      ],
+      "values": [
+        {
+          "value": 20
+        }
+      ],
+      "track": [
+        {
+            "side": 2,
+            "type": "straight",
+            "end": 0.5
+        },
+        {
+            "side": 6,
+            "type": "straight",
+            "end": 0.5
+        }
+    ],
+    "hexes": [
+        "B3"
+    ]
+},
+{
+    "color": "yellow",
+    "cities": [
+        {
+          "size": 1,
+          "angle": 160,
+          "percent": 0.5
+        },
+        {
+            "size": 1,
+            "angle": 310,
+            "percent": 0.5
+          }
+      ],
+      "tokens": [
+        {
+          "logo": "System18/DGN",
+          "angle": 160,
+          "percent": 0.5
+        },
+        {
+        "logo": "System18/DGN",
+        "angle": 310,
+        "percent": 0.5
+        }
+      ],
+      "names": [
+        {
+          "name": "Firenze",
+          "angle": 360,
+          "percent": 0.8
+        }
+      ],
+      "labels": [
+        {
+          "label": "Y",
+          "angle": 210,
+          "percent": 0.7
+        }
+      ],
+      "values": [
+        {
+          "value": 30,
+          "angle": 90,
+          "percent": 0.7
+        },
+        {
+            "value": 30,
+            "angle": 250,
+            "percent": 0.7
+          }
+      ],
+      "track": [
+        {
+            "side": 3,
+            "type": "sharp",
+            "end": 0.4
+        },
+        {
+          "side": 6,
+          "type": "gentle"
+      }
+    ],
+    "hexes": [
+        "D5"
+    ]
+},
+{
+    "color": "plain",
+    "centerTowns": [
+        {
+         "angle": 60,
+         "percent": 0.5
+        },
+        {
+            "angle": 240,
+            "percent": 0.5
+           }
+      ],
+      "names": [
+        {
+          "name": "Pistoia & Prato",
+          "angle": 180,
+          "percent": 0.6
+        }
+      ],
+    "hexes": [
+        "C4"
+    ]
+},
+{
+    "color": "plain",
+    "centerTowns": [
+        {
+         "angle": 60,
+         "percent": 0.5
+        },
+        {
+            "angle": 240,
+            "percent": 0.5
+           }
+      ],
+    "hexes": [
+        "B5"
+    ]
+},
+{
+"color": "offboard",
+"track": [
+    {
+        "side": 4,
+        "type": "offboard"
+    }
+],
+"offBoardRevenue": {
+    "name": {
+      "name": "Roma"
+    },
+    "revenues": [
+      {
+        "color": "white",
+        "cost": 10
+      },
+      {
+        "color": "gray",
+        "cost": 70
+      },
+      {
+      "color": "black",
+      "textColor": "white",
+      "cost": 150
+      }
+    ]
+},
+"hexes":[
+        "C8"
+    ]
+},
+{
+    "color": "offboard",
+    "offBoardRevenue": {
+        "name": {
+          "name": "Adriatic Coast"
+        },
+        "revenues": [
+          {
+            "color": "white",
+            "cost": 10
+          },
+          {
+            "color": "gray",
+            "cost": 40
+          },
+          {
+          "color": "black",
+          "textColor": "white",
+          "cost": 200
+          }
+        ]
+    },
+    "track": [
+        {
+            "side": 1,
+            "type": "offboard"
+        }
+    ],
+    "hexes":[
+            "F1"
+        ]
+    },
+    {
+        "color": "offboard",
+        "offBoardRevenue": {
+            "name": {
+              "name": "Northern Italy"
+            },
+            "revenues": [
+              {
+                "color": "white",
+                "cost": 30
+              },
+              {
+                "color": "gray",
+                "cost": 60
+              },
+              {
+              "color": "black",
+              "textColor": "white",
+              "cost": 120
+              }
+            ]
+        },
+        "track": [
+            {
+                "side": 2,
+                "type": "offboard"
+            },
+            {
+                "side": 6,
+                "type": "offboard"
+            }
+        ],
+        "hexes":[
+                "D1"
+            ]
+        }
+    ]
+}
+
+}
